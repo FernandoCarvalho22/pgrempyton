@@ -1,0 +1,18 @@
+funcionario = input("Digite o nome do funcionário: ")
+matricula = input("Digite o nº de matrícula do funcionário: ")
+salario = float(input("Digite o salário: "))
+custos = float(input("Digite os custo do funcionário (INSS/Seguros etc): "))
+
+
+print("Funcionario:",funcionario , ("-") ,  "Matricula nº:",matricula , ("-") , "Salário:R$",salario , ("-") , "Custos:R$",custos ) 
+
+mensal = salario + custos 
+print("Custo mensal: R$",round(mensal,5))
+
+anual = mensal * 12
+print("Este funcionário custa por ano para a empresa: R$", round(anual,5))
+    
+if (anual < 50.000):
+    print("Obs: Dentro dos padrões financeiros da empresa")
+elif (anual > 50.000):
+    print("Obs: Funcionário de alto custo")

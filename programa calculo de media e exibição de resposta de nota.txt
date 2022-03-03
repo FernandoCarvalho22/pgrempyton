@@ -1,0 +1,25 @@
+nota = float(input("Digite sua nota deste último bimestre: "))
+if(nota < 5): #se
+    print("Você foi reprovado neste bimestre!!!")
+elif(nota <7): # e se 
+    print("Recuperação")
+else: # se não
+    print("Você foi aprovado neste bimestre!!!")
+    
+print("Agora calcule sua média do ano...")  
+
+a = float(input("Digite sua nota 1º bimestre: "))
+b = float(input("Digite sua nota 2º bimestre: "))
+c = float(input("Digite sua nota 3º bimestre: "))
+d = float(input("Digite sua nota 4º bimestre: "))
+
+media = (a + b + c + d ) / 4
+print("Sua média do ano é: ",round(media,2))
+
+if(nota < 5):
+    print("Aprovado. Você passou de ano!!!")
+elif(nota <7):
+    print("Recuperação")
+else:
+    print("Você foi aprovado e passou de ano. Parabéns !!!")
+    

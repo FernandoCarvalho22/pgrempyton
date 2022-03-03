@@ -1,0 +1,15 @@
+peso = float(input("Digite seu peso - "))
+altura = float(input("Digite sua altura - "))
+
+imc = peso/(altura**2)
+
+if(imc <= 18.5):
+    print("Quer um pedaço de bolo???")
+
+elif(imc < 24.9):
+    print("Parabens você está ótimo...")
+
+else: 
+    print("Bora pra academia.")
+
+print("IMC - ", round(imc,2))
